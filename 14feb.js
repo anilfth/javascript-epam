@@ -38,8 +38,20 @@
 //     console.log(i)
 //   }                      
  // using for loops calculate the square of numbers from 1 to 10 and write is document using document.write
- for (let i = 1; i <= 10; i++) {
-    let square = i * i;
-    // document.write(square + "<br>");
-    console.log(square);
-  }
+//  for (let i = 1; i <= 10; i++) {
+//     let square = i * i;
+//     // document.write(square + "<br>");
+//     console.log(square);
+//   }
+
+// if else statements in javascript
+//  if(new Date().getHours() > 18){
+//   console.log("greeting dya");
+//  }else
+//  {
+//   console.log("good evening");
+//  }
+let a= 4;
+let b = 5;
+let c = a+b;
+console.log(c);
