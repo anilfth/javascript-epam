@@ -33,7 +33,13 @@
 //   }
 
                         // for loops
-  let i =0;
-  for(;i<10;i++){
-    console.log(i)
-  }                      
+//   let i =0;
+//   for(;i<10;i++){
+//     console.log(i)
+//   }                      
+ // using for loops calculate the square of numbers from 1 to 10 and write is document using document.write
+ for (let i = 1; i <= 10; i++) {
+    let square = i * i;
+    // document.write(square + "<br>");
+    console.log(square);
+  }
