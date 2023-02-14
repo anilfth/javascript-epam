@@ -1,9 +1,9 @@
-var a = 20;
-console.log(a);
-function f1(){
-    console.log("inside a function", a);
-}
-f1();
+// var a = 20;
+// console.log(a);
+// function f1(){
+//     console.log("inside a function", a);
+// }
+// f1();
 // // //  var declare with function only scope
 // function f2(){
 //     var b = 30;
@@ -48,3 +48,27 @@ f1();
 // console.log(obj.id);
 // obj.id = 105;
 // console.log(obj.id);
+ 
+ // hoisting and temporal dead zone time 3 to 4 pm
+
+//  console.log("This is a temporal zone");
+// //  a = 20;
+//  console.log("let:", a)
+//  var a = 10;
+// //  let a = 20;
+//  console.log(a);
+//  function printsum(){
+//     console.log("print the sum of ");
+//  } 
+//  printsum();
+// ( function (){
+//     console.log("printing sum of IIFE");
+//  })
+//  ();
+  let vls = prompt("Enter your name");
+  if(vls == null || vls == " "){
+    document.write("Hello visitor ! welcome")
+  }
+  else{
+    document.write("Hello" + vls +"welcome" )
+  }
