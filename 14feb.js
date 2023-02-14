@@ -15,3 +15,19 @@ switch(gadget){
                     break;
 
 }
+ // switch vs dictonary object
+ let city = 'India'
+  switch(city){
+    case 'india':
+        console.log('hi india')
+        break;
+        case 'America':
+            console.log('Hi America')
+            break;
+            case 'China':
+                console.log('Hi china')
+                break;
+                default:
+                    console.log('welcome !')
+                    break;
+  }
