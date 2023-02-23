@@ -1,0 +1,59 @@
+.->Date- 23--2-23 
+   Rest operator ==> (...args)
+notation same both for rest and spread(...args)
+****************************************spread operator-->******************************************************************************************************
+ The spread operator is represented by three consecutive dots (...) and is used to spread the contents of an array or an object into 
+another array or object. 
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const concatenatedArr = [...arr1, ...arr2];
+
+console.log(concatenatedArr); // [1, 2, 3, 4, 5, 6]
+
+
+********************************REST OPERATOR**************************************************************************
+The rest operator is also represented by three consecutive dots (...) and is used to gather the remaining arguments passed to a function into an array
+. Here is an example of using the rest operator to sum up multiple arguments:
+
+function sum(...args) {
+  return args.reduce((total, num) => total + num);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+
+
+
+
+
+
+-> *************************************************************call back function n javascript***************************************************
+
+A callback is a function passed as an argument to another function
+
+This technique allows a function to call another function
+
+A callback function can run after another function has finished
+
+**********************************************Array.prototype.reduce()******************************************************************
+
+The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the 
+calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+
+**********************************difference btw spread operator and rest operator*****************************************************************************
+Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element
+
+********************************Time 03 to 04 pm****************************************************
+
+*************************************************************Hoisting in javascript**********************************************************
+
+
+
+******************************************************** Scope i javascript ****************************************************************************************
+
+
+***************************************************function declartion vs function expression************************************************************
+
+
+*******************************Named function expression********************************************************************************

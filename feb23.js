@@ -32,14 +32,14 @@
 // firstFunc(function printArray(arr10){
 // console.log("Printing some massage");
 // });
-function greeting(name) {
-    alert(`Hello, ${name}`);
-  }
+// function greeting(name) {
+//     alert(`Hello, ${name}`);
+//   }
   
-  function processUserInput(callback) {
-    const name = prompt("Please enter your name.");
-    callback(name);
-  }
+//   function processUserInput(callback) {
+//     const name = prompt("Please enter your name.");
+//     callback(name);
+//   }
   
-  processUserInput(greeting);
-  
+//   processUserInput(greeting);
+   
