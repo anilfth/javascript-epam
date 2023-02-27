@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Textbox Example</title>
+</head>
+<body>
+	<label for="text">Enter text:</label>
+	<input type="text" id="text">
+	<button onclick="displayText()">Display Text</button>
+	<p id="output"></p>
+
+	<script>
+		function displayText() {
+			// Get the value of the textbox
+			var text = document.getElementById("text").value;
+
+			// Update the HTML content
+			document.getElementById("output").innerHTML = text;
+		}
+	</script>
+</body>
+</html>

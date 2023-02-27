@@ -59,4 +59,15 @@ Spread syntax "expands" an array into its elements, while rest syntax collects m
 *******************************Named function expression********************************************************************************
 
 
-***********************************IIFA
+***********************************IIFA*******************
+
+**************************DOM********************
+*************recursion in javascript ***************
+
+
+**********************DOM Events***********************************
+event.bubling
+event capturing
+event handlers
+.addEventsListener
+removed EventListener
