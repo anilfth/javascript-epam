@@ -144,4 +144,24 @@ console.log(getValues({keyOne: 1, keyTwo: 2, keyThree: 3}));
 // Output: [1, 2, 3]
 
   
+  // task 5
+  function getAdultAppleLovers(data) {
+    // Filter the array of objects to get only the ones with favorite fruit as "apple"
+    const appleLovers = data.filter(function(person) {
+      return person.favoriteFruit === 'apple';
+    });
+    
+    // Filter the resulting array to get only the objects where age is greater than 18
+    const adultAppleLovers = appleLovers.filter(function(person) {
+      return person.age > 18;
+    });
+    
+    // Map the resulting array to create a new array of strings, which are the names of the objects
+    const names = adultAppleLovers.map(function(person) {
+      return person.name;
+    });
+    
+    // Return the final array of names
+    return names;
+  }
   
