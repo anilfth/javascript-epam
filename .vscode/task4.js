@@ -1,5 +1,5 @@
     // question 1
-// using reverse function ///
+// using arrow function  ///
 const reverseNumber = (num) => {
     let Reverse = num.toString().split("").reverse().join("");
     if (Reverse.endsWith("-")) {
@@ -40,6 +40,21 @@ function reverseNumber(num) {
   console.log(reverseNumber(123456)); // Output: 654321
   console.log(reverseNumber(-123456)); // Output: -654321
 
+  // method 4
+  function reverseNumber(num) {
+    let a = num < 0;
+    if (a) {
+      num = Math.abs(num);
+    }
+    let b = 0;
+    while (num > 0) {
+      let lastDigit = num % 10;
+      b = b * 10 + lastDigit;
+      num = Math.floor(num / 10);
+    }
+    return a ? -b : b;
+  }
+  
                                          //   question2 
 
                                          // method 1 using while llops 
