@@ -93,6 +93,23 @@ console.log('Done!');
 
 -> The event loop is a constantly running process that monitors both the callback queue and the call stack.
 -> Promises.->  A unique JavaScript object that allows us to perform asynchronous operations
--> A callback function executes when an asynchronous operation completes
+-> A callback function executes when an asynchronous operation completesby 
 -> JavaScript maintains a queue of callback functions. It is called a callback queue or task queue. A queue data structure is First-In-First-Out(FIFO). 
 So, the callback function that first gets into the queue has the opportunity to go out first
+
+********************* browser object model*************************************************
+
+************************local and seesion storage**********************************************
+.web storage--> web storage api provides mechanisms which browsers can securely store key/value pairs.
+storage elements are simple key values stores(Strings)
+ or  
+1.web storage; better than cookies
+2. web storage, web applications can store data locally within the user's browser
+*******Web Storage Objects*****
+1.window.localStorage ->The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+}
+2.window.sessionStorage -> The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.

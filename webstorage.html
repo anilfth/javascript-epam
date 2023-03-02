@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Local and Session Storage Example</title>
+	<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+<style>
+    body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#local, #session {
+	margin: 50px auto;
+	width: 80%;
+	max-width: 500px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+p {
+	margin-top: 20px;
+}
+
+</style>
+<body>
+	<h1>Local and Session Storage Example</h1>
+
+	<div id="local">
+		<h2>Local Storage</h2>
+		<label for="local-input">Enter a value:</label>
+		<input type="text" id="local-input">
+		<button id="local-btn">Save to Local Storage</button>
+		<p id="local-output"></p>
+	</div>
+
+	<div id="session">
+		<h2>Session Storage</h2>
+		<label for="session-input">Enter a value:</label>
+		<input type="text" id="session-input">
+		<button id="session-btn">Save to Session Storage</button>
+		<p id="session-output"></p>
+	</div>
+
+	<!-- <script src="script.js"></script> -->
+<script> 
+</script>
+</body>
+</html>
