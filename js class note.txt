@@ -113,3 +113,13 @@ if (typeof(Storage) !== "undefined") {
   // Sorry! No Web Storage support..
 }
 2.window.sessionStorage -> The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.
+
+*****************************************regular expression in javascript*************************************************
+
+  **************************************************8 06/03/2023******************************
+
+***********************Date in javaScript***********************************************************
+
+********task ************ subitted after holi-->
+create a countdown timer like stop watch
+
