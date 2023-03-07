@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Validation</title>
+</head>
+<style>
+body{
+background-color: aqua;
+border:100%;
+padding:0px;
+margin: 0px;
+font-weight: lighter;
+background-image: url('timer.jpeg');
+}
+h1{
+    color: aquamarine;
+    background-color: burlywood;
+    margin: 0px;
+    padding: 0px;
+}
+</style>
+<body>
+ <center><h1> Email Validation</h1> </center>  
+ <br>  
+  <label for="email">Enter your email address:</label>
+  <input type="text" id="email" name="email">
+  <button onclick="validateEmail()">Submit</button>
+
+  <script>
+    function validateEmail() {
+      let email = document.getElementById("email").value;
+
+      if (/^[0-9]{8}@lpu\.in$/.test(email)) {
+        alert("Valid email address");
+      } else if (email.endsWith("@gmail.com")) {
+        alert("Invalid email address. Only @lpu.in domain is allowed.");
+      } else {
+        alert("valid email address");
+      }
+    }
+  </script>
+</body>
+</html>
