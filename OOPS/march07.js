@@ -47,4 +47,18 @@ class Person {
   const Peter = new Student('Peter', 21, 'B.tech');
   Peter.introduceSelf();
   Peter.printMarks([90, 85, 95]);
+  class Cow{
+eats(){
+    this.#food();
+}
+#food(){
+    console.log()
+}
+  }
+  function Circle(radius) {
+    this.radius = 5;
   
+    this.Area = function() {
+      return Math.PI * Math.pow(this.radius, 2);
+};
+  }

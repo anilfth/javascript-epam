@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectable Table</title>
+  <style>
+    table {
+      background-color: green;
+      border-collapse: collapse;
+    }
+    td {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      font-weight: bold;
+      border: 3px solid;
+      vertical-align: middle;
+      background-color: white;
+    }
+    .special {
+      background-color:blue;
+    }
+    .selected {
+      background-color: yellow;
+    }
+    .selected-row {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td></td>
+      <td class="special">Special cell</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="row-1">cell</td>
+      <td class="row-1 col-2">cells</td>
+      <td class="row-1 col-3">cell</td>
+    </tr>
+    <tr>
+      <td class="row-2">cells</td>
+      <td class="row-2 col-2">cell </td>
+      <td class="row-2 col-3">cell</td>
+    </tr>
+    <tr>
+      <td class="row-3">cells</td>
+      <td class="row-3 col-2">cells</td>
+      <td class="row-3 col-3">cells</td>
+    </tr>
+  </table>
+
+  <script>
+    const table = document.querySelector('table');
+    const cells = document.querySelectorAll('td');
+
+    let selectedCells = [];
+    let selectedRows = [];
+
+    function toggleSelectedCell(cell) {
+      if (cell.classList.contains('selected')) {
+        cell.classList.remove('selected');
+        selectedCells.splice(selectedCells.indexOf(cell), 1);
+      } else {
+        cell.classList.add('selected');
+        selectedCells.push(cell);
+      }
+    }
+
+    function toggleSelectedRow(row) {
+      if (row.classList.contains('selected-row')) {
+        row.classList.remove('selected-row');
+        selectedRows.splice(selectedRows.indexOf(row), 1);
+      } else {
+        row.classList.add('selected-row');
+        selectedRows.push(row);
+      }
+    }
+
+    function toggleTableColor() {
+      if (table.classList.contains('selected')) {
+        table.classList.remove('selected');
+        selectedCells.forEach(cell => cell.classList.remove('selected'));
+        selectedCells = [];
+        selectedRows.forEach(row => row.classList.remove('selected-row'));
+        selectedRows = [];
+      } else {
+        table.classList.add('selected');
+        cells.forEach(cell => {
+          if (!cell.classList.contains('selected')) {
+            cell.classList.add('selected');
+            selectedCells.push(cell);
+          }
+        });
+      }
+    }
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        if (cell.classList.contains('special')) {
+          toggleTableColor();
+        } else {
+          toggleSelectedCell(cell);
+          if (cell.classList.contains('col-1')) {
+            const row = cell.parentNode;
+            toggleSelectedRow(row);
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

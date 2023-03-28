@@ -1,0 +1,12 @@
+[
+    {
+    "product" : "T-shirt",
+    "color" : "blue",
+    "size" : "L"
+    },
+    {
+    "product" : "Trousers",
+    "color" : "black",
+    "size" : "M"
+    }
+    ]

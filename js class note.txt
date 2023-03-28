@@ -123,3 +123,29 @@ if (typeof(Storage) !== "undefined") {
 ********task ************ subitted after holi-->
 create a countdown timer like stop watch
 
+*******************************oops in javascript**************************************
+object = data +behavior
+1. encapsulation
+2. inheritance--> 1 single inheritance 2. multi level  inheritance 3. multiple inheritance
+3. polymorphism
+4.this keyword--> use in constructor 2.
+5. super keyword
+6.
+*************************************json in javascript***********************************
+*******************************promises********************************
+a promises is an object representing the eventually
+completion or failure of an asynchronous operation
+a promises is a returned object to which you attach callback
+instead of passing callback into a function.
+1.callback hell
+
+
+****************************************** FETCH () API date(23/03/2023)**********************************************************************************************************************************************
+
+************************************************async await(23/03/2023)************************************************************************************************
+********************************************************node.js************************************************
+
+
+***********************************************express js************************************************************
+   1.) nodemode in express js
+2.) npm run div start --> when we start our projects

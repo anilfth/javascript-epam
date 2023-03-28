@@ -1,0 +1,12 @@
+[
+    {
+    "Empid" : 101,
+    "Empname" : "Aman",
+    "Dept" : "HR"
+    },
+    {
+    "Empid" : 102,
+    "Empname" : "Priya",
+    "Dept" : "Sales"
+    }
+    ]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+</style>
+<body>
+    <p id="para"> this is lovely professional university</p>
+    <p  class="para1"> welcome to lovely professional university jalndhar</p>
+<!-- how to access elements by Id -->
+    <!-- <script>
+          var a = document.getElementById("para").innerText;
+          document.write(a);
+    </script> -->
+      <!-- //    innerHTML = the innerHTML property returns the text content of the Element including all spacing and inner html tags -->
+       
+      <!-- how t access elements by class -->
+      
+      <!-- <script>
+            var b = document.getElementsByClassName("para1")[0].innerHTML;
+               document.write(b);
+         </script> -->
+         <!-- how to access elements by tagNames -->
+         <!-- <script>
+            var c = document.getElementsByTagName("p; ");
+            document.write(c);
+            console.log(c);
+         </script> -->
+          
+    <!-- how to access first elements -->
+    <!-- <script>
+        var p = document.querySelector('p').innerHTML;
+        document.write(p);
+    </script> -->
+ <!-- querySelector() metod can only be used to access a single element while querySelectorAll() method can be used to access all elements which  -->
+ <!-- match with specified CSS selector; -->
+<h1 id="table"> I am creating a table </h1>
+ <ul>
+    <li> lovely</li>
+    <li> professional</li>
+    <li> university</li>
+ </ul>
+ <script>
+    var d = document.getElementById('table').innerHTML;
+    document.write(d);
+    var child = document.body.children;
+    console.log(child);
+ </script>
+</body>

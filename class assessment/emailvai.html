@@ -11,7 +11,7 @@ padding:0px;
 margin: 0px;
 font-weight: lighter;
 background-image: url('timer.jpeg');
-/* background-image: url('email.jpg'); */
+/* background-image: url('e1.webp'); */
 /* background-repeat: no-repeat; */
 
 }
@@ -38,9 +38,11 @@ button{
     background-image:url('email.jpg') ;
     font-size: 50px;
 }
+
 </style>
 <body>
  <center><h1> Email Validation</h1> </center>  
+ <img src="e1.webp" width="200" height="200"> <img>
  <br>  
   <label for="email">Enter your email address:</label> <br>
   <br>
@@ -52,7 +54,7 @@ button{
     function validateEmail() {
       let email = document.getElementById("email").value;
 
-      if (/^[a-zA-Z0-9.]{8}@lpu\.in$/.test(email)){
+      if (/^[a-z]+\.[0-9]{8,8}@lpu\.in$/.test(email)){
     // if( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
       
         alert("Valid email address");
