@@ -38,16 +38,47 @@
     </script> -->
  <!-- querySelector() metod can only be used to access a single element while querySelectorAll() method can be used to access all elements which  -->
  <!-- match with specified CSS selector; -->
-<h1 id="table"> I am creating a table </h1>
- <ul>
-    <li> lovely</li>
+<!-- <h1 id="table"> I am creating a table </h1> -->
+ <!-- how to access list  -->
+ <!-- <ul> // this space show a text in JavaScript -->
+ <ul><li> lovely</li>
     <li> professional</li>
-    <li> university</li>
- </ul>
- <script>
-    var d = document.getElementById('table').innerHTML;
-    document.write(d);
+    <li> university</li></ul>
+ <!-- </ul> // when we accessing lastchild then it show text  -->
+ <!-- acces children of a body -->
+ <!-- <script>
     var child = document.body.children;
     console.log(child);
- </script>
+ </script> -->
+
+ <!-- add new children in  a <body> -->
+   <script>
+ var para = document.createElement("p");
+var textNode = document.createTextNode("This is a new para");
+para.appendChild(textNode);
+console.log(para); // this is show output in console
+document.body.appendChild(para); // this is show output in body 
+</script>
+<!-- appendChild ==> The JavaScript appendChild() method is used to insert a new node or reposition an existing node as the last child of a particular parent node. -->
+
+<!-- Access first and last element in list -->
+<script>
+   var list = document.querySelector('ul');
+   console.log(list);
+   console.log(list.firstChild);
+   console.log(list.lastChild);
+   //  how to access siblings
+   var firstsiblings = para.nextElementSibling;
+   console.log(firstsiblings);
+   // if we want to access another siblings then use .nextElementSibling
+   // var firstsiblings = para.nextElementSibling.nextElementSibling;
+   // console.log(firstsiblings);
+    
+   //   how to know parents of any(List....)
+   console.log(list.parentNode);
+</script>
+
+
 </body>
+
+
